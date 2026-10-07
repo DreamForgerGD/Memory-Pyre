@@ -1,3 +1,19 @@
+# Godot-специфичные файлы
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+*.translation
+
+# Служебные файлы ОС
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
 # Godot 4+ specific ignores
 .godot/
 /android/
+
