@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c3tj4tplt0c6m"]
+
+[ext_resource type="Script" uid="uid://bwcp2yte6lh6x" path="res://elements/player.gd" id="1_5urir"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6o62y"]
+
+[node name="Player" type="CharacterBody2D" unique_id=2025931763]
+script = ExtResource("1_5urir")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=29638592]
+sprite_frames = SubResource("SpriteFrames_6o62y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1949521512]
