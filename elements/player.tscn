@@ -1,8 +1,53 @@
 [gd_scene format=3 uid="uid://c3tj4tplt0c6m"]
 
 [ext_resource type="Script" uid="uid://bwcp2yte6lh6x" path="res://elements/player.gd" id="1_5urir"]
+[ext_resource type="Texture2D" uid="uid://d3dps2mntw7x3" path="res://assets/person_textures/gg/Idle1.png" id="2_21w6h"]
+[ext_resource type="Texture2D" uid="uid://d11iitmj3pj20" path="res://assets/person_textures/gg/Idle2.png" id="3_iy5ew"]
+[ext_resource type="Texture2D" uid="uid://ko3k7a0bimy5" path="res://assets/person_textures/gg/Idle3.png" id="4_g8wk1"]
+[ext_resource type="Texture2D" uid="uid://cwiuy215k1a6m" path="res://assets/person_textures/gg/Idle4.png" id="5_wpvne"]
+[ext_resource type="Texture2D" uid="uid://b3qehuthogfft" path="res://assets/person_textures/gg/Idle5.png" id="6_uhma8"]
+[ext_resource type="Texture2D" uid="uid://bsev4g2myrtce" path="res://assets/person_textures/gg/Idle6.png" id="7_8f34y"]
+[ext_resource type="Texture2D" uid="uid://b6hkka7nqsh51" path="res://assets/person_textures/gg/Idle7.png" id="8_mjpw8"]
+[ext_resource type="Texture2D" uid="uid://b4ntj6v7vqwuc" path="res://assets/person_textures/gg/Idle8.png" id="9_0ehgu"]
+[ext_resource type="Texture2D" uid="uid://c2bxkx8ts01hj" path="res://assets/person_textures/gg/Idle9.png" id="10_l7mpt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6o62y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_21w6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_iy5ew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g8wk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wpvne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uhma8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8f34y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mjpw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0ehgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l7mpt")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sf2tj"]
+size = Vector2(30, 46)
 
 [node name="Player" type="CharacterBody2D" unique_id=2025931763]
 script = ExtResource("1_5urir")
@@ -11,3 +56,8 @@ script = ExtResource("1_5urir")
 sprite_frames = SubResource("SpriteFrames_6o62y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1949521512]
+shape = SubResource("RectangleShape2D_sf2tj")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=372284849]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true

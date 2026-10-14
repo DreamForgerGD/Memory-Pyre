@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dhyf28l6gdcbo"]
+
+[ext_resource type="Texture2D" uid="uid://clyg7pgxn2wqf" path="res://assets/house_textures/floor_day.png" id="1_5souq"]
+
+[node name="Floor" type="Sprite2D" unique_id=1111423233]
+texture = ExtResource("1_5souq")
+centered = false

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Memory-Pyre"
-run/main_scene="uid://hyue2bhgu8p2"
+run/main_scene="uid://xeqbrho0xqaq"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://assets/house_textures/icon.svg"
 
